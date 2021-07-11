@@ -1,10 +1,10 @@
 FROM Spammers-lite=BlacksharkUB:latest
 
 #clonning repo 
-RUN git clone https://github.com/Spammers-lite/Blackub.git /root/hellbot
+RUN git clone https://github.com/Team-Criminal/Vader /root/hellbot
 
 #working directory 
-WORKDIR /root/BLACKUB
+WORKDIR /root/Vader
 
 # Install requirements
 RUN pip3 install -U -r requirements.txt
