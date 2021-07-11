@@ -38,8 +38,8 @@ https://telegra.ph/file/a0f553c85bcb82311721a.jpg)](https://t.me/black_shark_bot
 
 Simply clone the repository and run the main file:
 ```sh
-git clone https://github.com/Spammers-lite/ERNEST-USERBOT-.git
-cd ERNEST-USERBOT
+git clone https://github.com/Spammers-lite/BLACKSHARKUSERBOT.git
+cd BLACK-USERBOT
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
