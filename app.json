@@ -1,7 +1,7 @@
 {
-  "name": "฿Ⱡ₳₵₭₴Ⱨ₳Ɽ₭Ʉ฿",
-  "description": "฿Ⱡ₳₵₭ ₴Ⱨ₳Ɽ₭ is one of the Best UserBot for Telegram. Known for its Smoothness, Design, Support.",
-  "logo": "https://telegra.ph/file/7decf235312af8536e9aa.jpg ",
+  "name": "฿LACKSHARKUB",
+  "description": "BLACK SHARK is one of the Best UserBot for Telegram. Known for its Smoothness, Design, Support.",
+  "logo": "https://telegra.ph/file/a0f553c85bcb82311721a.jpg ",
     "keywords": [
     "telegram",
     "userbot",
@@ -21,7 +21,7 @@
     },
     "YOUR_NAME": {
       "description": "Fill Your Telegram Name. Default Value is Hêll",
-      "value": "『฿Ⱡ₳₵₭』",
+      "value": "『฿LACK』",
       "required": false
     },
     "ALIVE_MSG": {
