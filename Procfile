@@ -1,1 +1,1 @@
-worker: bash Userbot 
+worker: bash userbot 
