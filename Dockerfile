@@ -1,7 +1,7 @@
 FROM Spammers-lite=BlacksharkUB:latest
 
 #clonning repo 
-RUN git clone https://github.com/Team-Criminal/Vader /root/Userbot
+RUN git clone https://github.com/Team-Criminal/Vader /root/userbot
 
 #working directory 
 WORKDIR /root/Vader
@@ -11,4 +11,4 @@ RUN pip3 install -U -r requirements.txt
 
 ENV PATH="/home/userbot/bin:$PATH"
 
-CMD ["python3","-m","USERBOT"]
+CMD ["python3","-m","userbot"]
