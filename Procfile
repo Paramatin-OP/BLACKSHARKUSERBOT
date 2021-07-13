@@ -1,1 +1,1 @@
-worker: bash Vader
+worker: bash Darkbot
