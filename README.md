@@ -38,7 +38,20 @@ https://telegra.ph/file/a0f553c85bcb82311721a.jpg)](https://t.me/black_shark_bot
 
 Simply clone the repository and run the main file:
 ```sh
+FROM Spammers-lite=BlacksharkUB:latest
 
+#clonning repo 
+RUN git clone https://github.com/Team-Criminal/Vader /root/userbot
+
+#working directory 
+WORKDIR /root/Vader
+
+# Install requirements
+RUN pip3 install -U -r requirements.txt
+
+ENV PATH="/home/userbot/bin:$PATH"
+
+CMD ["python3","-m","userbot"]
 ```
 
 An example `local_config.py` file could be:
