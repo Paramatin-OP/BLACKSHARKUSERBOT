@@ -11,16 +11,16 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/The-HellBot/HellBot/",
+  "repository": "https://github.com/Spammers-lite/BLACKSHARKUSERBOT/",
   "website": "https://github.com/The-HellBot/",
-  "success_url": "https://t.me/The_HellBot",
+  "success_url": "https://t.me/Spammers-lite",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
       "value": "ANYTHING"
     },
     "YOUR_NAME": {
-      "description": "Fill Your Telegram Name. Default Value is Hêll",
+      "description": "Fill Your Telegram Name. Default Value is 『฿LACK』 ",
       "value": "『฿LACK』",
       "required": false
     },
@@ -35,7 +35,7 @@
       "required": false
     },
     "ABUSE": {
-      "description": "Leave it blank if you dont want Profanity in HellBot. Else Fill ON.",
+      "description": "Leave it blank if you dont want Profanity in BLACKSHARKBot. Else Fill ON.",
       "value": "ON",
       "required": false
     },
@@ -105,12 +105,12 @@
       "value": ""
     },
     "YOUR_CHANNEL": {
-      "description": "Fill your channel username(without @) to get this displayed on your Hell Alive.",
+      "description": "Fill your channel username(without @) to get this displayed on your BLACKSHARK Alive.",
       "value": "",
       "required": false
     },
     "YOUR_GROUP": {
-      "description": "Fill your group username(without @) to get this displayed on your Hell Alive.",
+      "description": "Fill your group username(without @) to get this displayed on your BLACKSHARK Alive.",
       "value": "",
       "required": false
     },
@@ -142,3 +142,4 @@
     "url": "heroku/python"
   }]
 }
+  
