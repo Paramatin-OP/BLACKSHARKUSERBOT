@@ -1,7 +1,7 @@
 FROM Spammers-lite=BlacksharkUB:latest
 
 #clonning repo 
-RUN git clone https://github.com/Team-Criminal/Vader /root/hellbot
+RUN git clone https://github.com/Team-Criminal/Vader /root/Userbot
 
 #working directory 
 WORKDIR /root/Vader
