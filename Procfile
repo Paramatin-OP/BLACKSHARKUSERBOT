@@ -1,1 +1,1 @@
-worker: bash blackshark
+worker: bash Vader
