@@ -4,19 +4,19 @@
 _get_repolink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $HELL_REPO == "HellBot" ]]
+    if [[ $HARK_REPO == "BLACKSHARKUSERBOT" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL3B1c2hwZW5kcmE2MzY3L0RhcmstYm90L2FyY2hpdmUvbWFzdGVyLnppcA==" | base64 -d
-    elif [[ $HELL_REPO == "Hellbot" ]]
+    elif [[ $HARK_REPO == "Blackshark" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL3B1c2hwZW5kcmE2MzY3L0RhcmstYm90L2FyY2hpdmUvbWFzdGVyLnppcA==" | base64 -d
-    elif [[ $HELL_REPO =~ $regex ]]
+    elif [[ $HARK_REPO =~ $regex ]]
     then
-        if [[ $HELL_REPO_BRANCH ]]
+        if [[ $HARK_REPO_FORK ]]
         then
-            echo "${HELL_REPO}/archive/${HELL_REPO_BRANCH}.zip"
+            echo "${HARK_REPO}/archive/${HARK_REPO_FORK}.zip"
         else
-            echo "${HELL_REPO}/archive/master.zip"
+            echo "${HARK_REPO}/archive/master.zip"
         fi
     else
         echo "aHR0cHM6Ly9naXRodWIuY29tL3B1c2hwZW5kcmE2MzY3L0RhcmstYm90L2FyY2hpdmUvbWFzdGVyLnppcA==" | base64 -d
@@ -24,19 +24,19 @@ _get_repolink () {
 }
 
 
-_set_bot () {
+start_bot () {
     local zippath
     zippath="Blackshark.zip"
     echo "  Downloading source code ..."
     wget -q $(_get_repolink) -O "$zippath"
     echo "  Unpacking Data ..."
-    HELLPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
+    SharkPath=$(zipinfo -1 "$zippath" | grep -v "/.");
     unzip -qq "$zippath"
     echo "Done"
     echo "  Cleaning ..."
     rm -rf "$zippath"
     sleep 5
-    cd $HELLPATH
+    cd $SharkPath
     echo "    Starting BLACKSHARK   "
     echo "
                               𝔹𝕃𝔸ℂ𝕂 𝕊ℍ𝔸ℝ𝕂 𝕌𝕊𝔼ℝ𝔹𝕆𝕋
@@ -46,4 +46,4 @@ _set_bot () {
     python3 -m userbot
 }
 
-_set_bot
+start_bot
