@@ -1,4 +1,4 @@
-FROM Spammers-lite=BlacksharkUB:latest
+FROM Spammers-lite/BLACKSHARKUSERBOT:latest
 
 #clonning repo 
 RUN git clone https://github.com/Team-Criminal/Vader.git /root/userbot
